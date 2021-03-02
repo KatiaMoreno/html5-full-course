@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag area </title>
+
+    <style>
+        body{
+            margin: 0;
+        }
+        header, footer{
+            height: 25vh;
+            background-color: #ccc;
+
+
+        }
+        section{
+            display: flex;
+            flex-direction: row;
+        }
+
+        main{
+            height: 80vh;
+            background-color: #999;
+            flex: 1;
+        }
+
+        aside{
+            height: 80vh;
+            background-color: gold;
+            width: 20vw;
+
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Tag area</h1>
+    <img src="images/km16.png" alt="logo km" usemap="#mapa-logo">
+    
+    <map name="mapa-logo">
+
+        <area 
+        shape="rect" 
+        coords="20,20,0,0"
+        href="https://github.com/KatiaMoreno" 
+        target="_blank" 
+        alt="github Katia" 
+        >
+
+        <area 
+            shape="circle" 
+            coords="211,263,15" 
+            target="_blank" 
+            alt="olho-esquerdo" 
+            href="http://hcode.com.br" 
+        >
+
+
+        <area shape="circle" coords="301,263,15" target="_blank" href="http://youtube.com/hcodebrasil" alt="olho direito">
+    </map>
+   
+
+    
+
+</body>
+</html> 
+
