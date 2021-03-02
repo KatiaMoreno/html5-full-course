@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento: dragenter </title>
+</head>
+
+<style>
+    #drag{
+        width: 50vw;
+        height: 50vw;
+        background-color: rgb(116, 114, 113);
+    }
+
+    #target{
+        width: 50vw;
+        height: 50vw;
+        background-color: rgb(224, 89, 21);
+    }
+</style>
+
+
+<body>
+    
+    <div id="drag" ondrag="debug(event)" ondragend="debug(event)" draggable="true"></div>
+    <div id="target" ondragenter="debug(event)" ></div>
+
+    
+   
+     
+           
+<script>
+    function debug(e){
+       e.stopPropagation();
+        console.log('Event:' + e.type);
+       
+    }
+</script>
+
+</body=>
+</html>
